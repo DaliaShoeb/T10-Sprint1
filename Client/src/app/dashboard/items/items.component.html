@@ -1,0 +1,11 @@
+<!-- <p>
+ <h1>{{ product.name }} Details</h1>
+  <div><span>id: </span>{{product.id}}</div>
+  <div><span>name: </span>{{product.name}}</div>
+  <div><span>price: </span>{{product.price}}</div>
+  <div><span>createdat: </span>{{product.createdat}}</div>
+  <div><span>updatedat: </span>{{product.updatedat}}</div>
+  <div><span>sellername: </span>{{product.sellername}}</div>
+    <ng2-smart-table [settings]="settings"></ng2-smart-table> -->
+
+<ng2-smart-table [settings]="settings"  (editConfirm)="onEditConfirm($event)" [source]="data"></ng2-smart-table>

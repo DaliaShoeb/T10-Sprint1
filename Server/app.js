@@ -11,6 +11,7 @@ var express = require('express'),
 
 app.set('secret', config.SECRET);
 
+
 app.use(logger(process.env.NODE_ENV === 'production' ? 'combined' : 'dev'));
 app.use(
   cors({
@@ -48,5 +49,6 @@ app.use(function(req, res) {
     data: null
   });
 });
+app.disable('etag');
 
 module.exports = app;

@@ -31,7 +31,11 @@ const routes: Routes = [
         path: 'cart',
         component: CartComponent
       }
-      
+      // {
+      //   path: './Store/Store.component',
+      //   component: StoreComponent
+      // }
+
     ]
   }
 ];
